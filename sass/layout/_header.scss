@@ -1,0 +1,29 @@
+.header {
+    position: relative;
+    height: 95vh;
+    background-image: radial-gradient(circle farthest-corner at 2.7% 6.3%, rgba($color-primary-light, 0.6) 0%, rgba($color-primary-dark, 0.6) 90%), url(../img/index-bg2.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    border-radius: 10px 10px 0 0;
+    
+    &__logo-box {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+
+    &__logo {
+        height: 35px;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75%;
+        text-align: center;
+    }
+}
+
