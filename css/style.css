@@ -63,7 +63,7 @@ body {
   font-size: 5rem;
   text-transform: uppercase;
   display: inline-block;
-  background-image: linear-gradient(to right, #08AEEA, #2AF598);
+  background-image: linear-gradient(to right, #80D0C7, #0093E9);
   -webkit-background-clip: text;
   color: transparent; }
 
@@ -128,6 +128,13 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
   transform: translateY(0); }
 
+.card {
+  background-color: #00ff15;
+  height: 50rem;
+  transition: all .8s; }
+  .card:hover {
+    transform: rotateY(180deg); }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -147,17 +154,35 @@ body {
       top: 10rem;
       left: 20%; }
     .composition__photo:hover {
-      outline: 1.5rem solid #08AEEA;
+      outline: 1.5rem solid #80D0C7;
       transform: scale(1.05) translateY(-0.8rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.6);
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.85); }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #80D0C7, #0093E9);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+
 .header {
   position: relative;
   height: 95vh;
-  background-image: radial-gradient(circle farthest-corner at 2.7% 6.3%, rgba(8, 174, 234, 0.6) 0%, rgba(42, 245, 152, 0.6) 90%), url(../img/index-bg2.jpg);
+  background-image: radial-gradient(circle farthest-corner at 2.7% 6.3%, rgba(128, 208, 199, 0.6) 0%, rgba(0, 147, 233, 0.4) 90%), url(../img/index-bg2.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -213,4 +238,19 @@ body {
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
+  margin-top: -20vh; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: radial-gradient(circle farthest-corner at 2.7% 6.3%, rgba(128, 208, 199, 0.6) 0%, rgba(0, 147, 233, 0.6) 90%), url(../img/index-bg.jpg);
+  background-size: cover;
+  background-position: top;
+  transform: skewY(-7deg);
+  margin-top: -12rem; }
+  .section-features > * {
+    transform: skewY(7deg); }
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
   margin-top: -20vh; }
