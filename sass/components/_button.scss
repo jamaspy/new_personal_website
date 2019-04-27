@@ -31,10 +31,11 @@
         color: $color-primary;
         display: inline-block;
         border-bottom: 1px solid $color-primary;
-        padding: 3px;
+        padding: 8px;
         font-size: $default-font-size;
         text-decoration: none;
         transition: all ease-in .2s;
+        
         
     }
 
@@ -43,6 +44,7 @@
         color: $color-white;
         box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
         transform: translateY(-1px);
+        border-radius: 5px;
     }
 
     &:active{

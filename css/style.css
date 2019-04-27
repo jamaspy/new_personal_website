@@ -63,14 +63,13 @@ body {
   font-size: 5rem;
   text-transform: uppercase;
   display: inline-block;
-  background-image: linear-gradient(to right, #80D0C7, #0093E9);
+  background-image: linear-gradient(to right, #65d6ff, #025574);
   -webkit-background-clip: text;
   color: transparent; }
 
 .heading-tertiary {
   font-size: 1.6rem;
-  font-weight: 700;
-  text-transform: uppercase; }
+  font-weight: 700; }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -110,30 +109,61 @@ body {
   color: #777; }
 
 .btn-text:link, .btn-text:visited {
-  color: #55c57a;
+  color: #80D0C7;
   display: inline-block;
-  border-bottom: 1px solid #55c57a;
-  padding: 3px;
+  border-bottom: 1px solid #80D0C7;
+  padding: 8px;
   font-size: 1.6rem;
   text-decoration: none;
   transition: all ease-in .2s; }
 
 .btn-text:hover {
-  background-color: #55c57a;
+  background-color: #80D0C7;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-  transform: translateY(-1px); }
+  transform: translateY(-1px);
+  border-radius: 5px; }
 
 .btn-text:active {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
   transform: translateY(0); }
 
 .card {
-  background-color: #00ff15;
-  height: 50rem;
-  transition: all .8s; }
-  .card:hover {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    color: white;
+    font-size: 2rem;
+    height: 50rem;
+    transition: all 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+    text-align: center; }
+    .card__side--front {
+      color: #777;
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-color: #85FFBD;
+        background-image: linear-gradient(62deg, #85FFBD 0%, #FFFB7D 100%); }
+      .card__side--back-2 {
+        background-color: #8EC5FC;
+        background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); }
+      .card__side--back-3 {
+        background-color: #FBAB7E;
+        background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%); }
+  .card:hover .card__side--front {
     transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
 
 .composition {
   position: relative; }
@@ -154,7 +184,7 @@ body {
       top: 10rem;
       left: 20%; }
     .composition__photo:hover {
-      outline: 1.5rem solid #80D0C7;
+      outline: 1.5rem solid #025574;
       transform: scale(1.05) translateY(-0.8rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.6);
       z-index: 20; }
@@ -173,7 +203,7 @@ body {
     font-size: 6rem;
     margin-bottom: 0.5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #80D0C7, #0093E9);
+    background-image: linear-gradient(to right, #65d6ff, #025574);
     -webkit-background-clip: text;
     color: transparent; }
   .feature-box:hover {
@@ -182,7 +212,7 @@ body {
 .header {
   position: relative;
   height: 95vh;
-  background-image: radial-gradient(circle farthest-corner at 2.7% 6.3%, rgba(128, 208, 199, 0.6) 0%, rgba(0, 147, 233, 0.4) 90%), url(../img/index-bg2.jpg);
+  background-image: url(../img/index-bg2.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -242,7 +272,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: radial-gradient(circle farthest-corner at 2.7% 6.3%, rgba(128, 208, 199, 0.6) 0%, rgba(0, 147, 233, 0.6) 90%), url(../img/index-bg.jpg);
+  background-image: radial-gradient(circle farthest-corner at 2.7% 6.3%, rgba(101, 214, 255, 0.6) 0%, rgba(2, 85, 116, 0.6) 90%), url(../img/index-bg.jpg);
   background-size: cover;
   background-position: top;
   transform: skewY(-7deg);
