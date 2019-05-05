@@ -55,7 +55,7 @@
     &__picture {
         background-size: cover;
         height: 23rem;
-        background-blend-mode: screen;
+        background-blend-mode: soft-light;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         border-top-left-radius: 3px;
@@ -86,7 +86,7 @@
         position: absolute;
         top: 12rem;
         right: 2rem;
-        width: 75%;
+        width: 70%;
 
     }
 
@@ -103,14 +103,14 @@
 
         &--2 {
             background-image: linear-gradient(to right bottom,
-                rgba($color-primary-light, .85),
-                rgba($color-primary-dark, .85));
+                rgba($color-primary-light, .75),
+                rgba($color-primary-dark, .75));
         }
 
         &--3 {
             background-image: linear-gradient(to right bottom,
-                rgba($color-tertiary-light, .2),
-                rgba($color-tertiary-dark, .2));
+                rgba($color-tertiary-light, .75),
+                rgba($color-tertiary-dark, .75));
         }
 
         &::after {

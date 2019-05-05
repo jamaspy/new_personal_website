@@ -160,7 +160,7 @@ body {
         background-image: linear-gradient(62deg, #025574 0%, #65d6ff 100%); }
       .card__side--back-3 {
         background-color: #FBAB7E;
-        background-image: linear-gradient(62deg, #08AEEA 0%, #2AF598 100%); }
+        background-image: linear-gradient(62deg, #a06300 0%, #f5962a 100%); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -168,7 +168,7 @@ body {
   .card__picture {
     background-size: cover;
     height: 23rem;
-    background-blend-mode: screen;
+    background-blend-mode: soft-light;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
@@ -178,7 +178,7 @@ body {
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, #65d6ff, #025574), url(../img/nat-6.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #2AF598, #08AEEA), url(../img/nat-7.jpg); }
+      background-image: linear-gradient(to right bottom, #f5962a, #a06300), url(../img/nat-7.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -188,7 +188,7 @@ body {
     position: absolute;
     top: 12rem;
     right: 2rem;
-    width: 75%; }
+    width: 70%; }
   .card__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
@@ -196,9 +196,9 @@ body {
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(68, 160, 141, 0.75), rgba(9, 54, 55, 0.75)); }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(101, 214, 255, 0.85), rgba(2, 85, 116, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(101, 214, 255, 0.75), rgba(2, 85, 116, 0.75)); }
     .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(42, 245, 152, 0.2), rgba(8, 174, 234, 0.2)); }
+      background-image: linear-gradient(to right bottom, rgba(245, 150, 42, 0.75), rgba(160, 99, 0, 0.75)); }
     .card__heading-span::after {
       content: initial;
       display: initial;
