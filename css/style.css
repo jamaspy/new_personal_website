@@ -188,8 +188,9 @@ body {
     position: absolute;
     top: 12rem;
     right: 2rem;
-    width: 85%; }
+    width: 75%; }
   .card__heading-span {
+    padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
@@ -198,6 +199,10 @@ body {
       background-image: linear-gradient(to right bottom, rgba(101, 214, 255, 0.85), rgba(2, 85, 116, 0.85)); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(42, 245, 152, 0.2), rgba(8, 174, 234, 0.2)); }
+    .card__heading-span::after {
+      content: initial;
+      display: initial;
+      clear: initial; }
   .card__details ul {
     list-style: none;
     width: 80%;

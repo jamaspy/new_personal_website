@@ -86,12 +86,12 @@
         position: absolute;
         top: 12rem;
         right: 2rem;
-        width: 85%;
+        width: 75%;
 
     }
 
     &__heading-span {
-        // padding: 1rem;
+        padding: 1rem 1.5rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
 
@@ -111,6 +111,12 @@
             background-image: linear-gradient(to right bottom,
                 rgba($color-tertiary-light, .2),
                 rgba($color-tertiary-dark, .2));
+        }
+
+        &::after {
+            content: initial;
+            display: initial;
+            clear: initial;
         }
     }
 
